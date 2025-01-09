@@ -74,8 +74,8 @@ def extract_text_section(file_path):
         machine_code = f.read(text_section["sh_size"])
 
         # 输出机器代码
-        print(f".text 节偏移量: {hex(text_section['sh_offset'])}")
-        print(f".text 节大小: {hex(text_section['sh_size'])}")
+        print(f".text 节偏移量：{hex(text_section['sh_offset'])}")
+        print(f".text 节大小：{hex(text_section['sh_size'])}")
         print("机器代码 (十六进制):")
         print(machine_code.hex())
 
